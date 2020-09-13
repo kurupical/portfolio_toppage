@@ -1,0 +1,47 @@
+
+body {
+    margin-top: 0px;
+}
+
+header.header {
+    display: flex;
+    height: 100px;
+    position: fixed;
+    background-color: white;
+    margin-top: 0px;
+    z-index: 0;
+}
+
+header > a {
+    font-size: 24px;
+
+    /* headerの高さとあわせる */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    line-height: 60px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    color: #50514F;
+    text-align: center;
+    /* background-color: pink; */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #50514F;
+    cursor: pointer;
+    transition-delay: 0.3s;
+    transition: background-color 0.3s;
+    text-decoration: none; /* 下線を消す */
+}
+
+header > a:hover {
+    background-color: #50514F;
+    color: white;
+}
+
+body > main {
+
+    padding-top: 100px;
+}
