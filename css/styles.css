@@ -1,13 +1,21 @@
+:root {
+    --pattern-a-color: #50514F;
+    --pattern-b-color: white;
+}
 
 body {
     margin-top: 0px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    background: var(--pattern-a-color);
 }
 
-header.header {
+header {
     display: flex;
-    height: 100px;
+    height: 80px;
+    width: 95%;
     position: fixed;
-    background-color: white;
+    background-color: var(--pattern-b-color);
     margin-top: 0px;
     z-index: 0;
 }
@@ -16,20 +24,19 @@ header > a {
     font-size: 24px;
 
     /* headerの高さとあわせる */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 60px;
     line-height: 60px;
 
     margin-left: 20px;
     margin-right: 20px;
     width: 150px;
-    color: #50514F;
+    color: var(--pattern-a-color);
     text-align: center;
-    /* background-color: pink; */
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #50514F;
+    border-bottom-color: var(--pattern-a-color);
     cursor: pointer;
     transition-delay: 0.3s;
     transition: background-color 0.3s;
@@ -37,11 +44,44 @@ header > a {
 }
 
 header > a:hover {
-    background-color: #50514F;
-    color: white;
+    background-color: var(--pattern-a-color);
+    color: var(--pattern-b-color);
 }
 
 body > main {
-
     padding-top: 100px;
+}
+
+body > main > div {
+    margin: 0 0;
+    padding: 0;
+}
+body > main > div.pattern-a {
+    background-color: var(--pattern-a-color);
+    color: var(--pattern-b-color);
+    margin: 0;
+}
+
+body > main > div.pattern-b {
+    background-color: var(--pattern-b-color);
+    color: var(--pattern-a-color);
+}
+
+body > main > div > h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+div.contact {
+    text-align: center;
+}
+
+div.contact > a {
+    margin: 0 5px;
+}
+
+div.contact > a:hover {
+    opacity: 0.6;
 }
