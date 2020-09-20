@@ -1,7 +1,11 @@
 :root {
     --pattern-a-color: #50514F;
     --pattern-b-color: white;
-    --width: 70%
+    --width: 60%
+}
+
+a {
+    color: var(--pattern-b-color);
 }
 
 body {
@@ -56,16 +60,16 @@ body > main {
 }
 
 body > main > div {
-    margin: 0 0;
+    margin: 0;
     padding: 0;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
 }
 
 body > main > div > h1 {
-    padding-bottom: 3vw;
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
     font-size: 3vw;
     text-align: center;
+    font-family: 'Nixie One', cursive;
 }
 
 /* body 固有部分 */
@@ -94,7 +98,7 @@ body > main > div.body-top > h1 {
     line-height: 6vw;
     font-size: 5vw;
     opacity: 0.5;
-    top: 25vw;
+    top: 15vw;
     color: black;
     background-color: white;
     z-index: 1; 	
@@ -125,6 +129,7 @@ body > main > div.profile > div.contents > div {
 
 body > main > div.profile > div.contents > div.picture > img {
     width: 100%;
+    border-radius: 10vw;
 }
 
 body > main > div.profile > div.contents > div.sentence {
@@ -132,6 +137,80 @@ body > main > div.profile > div.contents > div.sentence {
     text-align: left;
 }
 
+/* skills */
+body > main > div > div.skills {
+    text-align: left;
+}
+
+/* skills timeline common */
+
+/* body > main > div > div.skills > div > */
+.acd-check {
+    display: none;
+}
+
+.acd-label {
+    display: block;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    padding-left: 1vw;
+    background-color: black;
+    position: relative;
+    font-size: 2vw;
+}
+
+.acd-label:before {
+    content: "＋";
+    font-size: 2vw;
+    padding-right: 1vw;
+    position: relative;
+}
+
+.acd-content {
+    height: 0;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+}
+
+.acd-check:checked + .acd-label + .acd-content {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.acd-check:checked + .acd-label:before {
+    content: "ー";
+}
+
+.timeline > li {
+    font-size: 1.5vw;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.timeline-date {
+    width: 10vw;
+    float: left;
+    margin-top: 2vw;
+}
+
+.timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 0.3vw white solid;
+    padding-left: 3vw;
+}
+
+.timeline-content:before {
+    content: "\2022";
+    font-size: 5vw;
+
+    position: absolute;
+    left: 9.2vw;
+    color: white;
+}
 /* contact */
 div.contact {
     text-align: center;
