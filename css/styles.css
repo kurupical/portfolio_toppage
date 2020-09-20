@@ -1,7 +1,7 @@
 :root {
     --pattern-a-color: #50514F;
     --pattern-b-color: white;
-    --width: 90%
+    --width: 70%
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 body > header {
     display: flex;
-    height: 4vw;
+    height: 5vw;
     width: var(--width);
     position: fixed;
     background-color: var(--pattern-b-color);
@@ -26,7 +26,7 @@ header > a {
 
     /* headerの高さとあわせる */
     margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
+    margin-bottom: 1.5vw;
     height: 3vw;
     line-height: 3vw;
 
@@ -61,6 +61,7 @@ body > main > div {
 }
 
 body > main > div > h1 {
+    padding-bottom: 3vw;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     font-size: 3vw;
@@ -111,6 +112,27 @@ body > main > div.pattern-b {
     color: var(--pattern-a-color);
 }
 
+/* profile */
+body > main > div.profile > div.contents {
+    display: flex;
+}
+
+body > main > div.profile > div.contents > div {
+    height: 30vw;
+    padding: 1vw;
+    width: 50%;
+}
+
+body > main > div.profile > div.contents > div.picture > img {
+    width: 100%;
+}
+
+body > main > div.profile > div.contents > div.sentence {
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+/* contact */
 div.contact {
     text-align: center;
 }
