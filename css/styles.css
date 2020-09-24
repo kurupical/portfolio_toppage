@@ -217,9 +217,11 @@ body > main > div > div.skills {
     left: 9.2vw;
     color: white;
 }
+
 /* contact */
 div.contact {
     text-align: center;
+    height: 5vw;
 }
 
 div.contact > a {
